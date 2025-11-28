@@ -1,0 +1,65 @@
+############################
+# Global / OS
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Python / Django
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+
+# SQLite DB
+db.sqlite3
+*.sqlite3
+
+# Django static & media (generated)
+backend/staticfiles/
+backend/media/
+media/
+staticfiles/
+
+############################
+# Virtual Environments
+############################
+.venv/
+venv/
+env/
+ENV/
+
+############################
+# Environment variables
+############################
+.env
+.env.*
+backend/.env
+frontend/.env
+
+############################
+# Node / React / Vite
+############################
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite / React build output
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+############################
+# IDE / Editor
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
