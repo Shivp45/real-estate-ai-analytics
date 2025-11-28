@@ -61,60 +61,65 @@ Admin
 
 1) Clone the repository
 
-git clone https://github.com/Shivp45/real-estate-ai-analytics.git
+```git clone https://github.com/Shivp45/real-estate-ai-analytics.git
 
 cd RealEstateAnalyticsApp
+```
 
 
 2) Backend Setup (Django)
 
-cd backend
+```cd backend
 
 python -m venv venv
 
 venv\Scripts\activate        # On Mac/Linux: source venv/bin/activate
 
 pip install -r requirements.txt
+```
 
 
 
 
 ## Create .env inside /backend:
 
-OPENAI_API_KEY=your_key_here
+```OPENAI_API_KEY=your_key_here
 
 SECRET_KEY=your_secret_here
 
 DEBUG=True
+```
 
 
 
 ## Run migrations and start server:
 
-1) python manage.py migrate
+```python manage.py migrate
 
-2) python manage.py runserver
+python manage.py runserver
+```
 
 
 ## Backend runs at:
 
- http://127.0.0.1:8000
+ `http://127.0.0.1:8000`
 
 
 
 3) Frontend Setup (React)
 
-1) cd ../frontend
+```cd ../frontend
 
-2) npm install
+npm install
 
-3) npm run dev
+npm run dev
+```
 
 
 
 ## Frontend runs at:
 
- http://localhost:5173
+ `http://localhost:5173`
 
 
 ## Login / Admin
@@ -123,7 +128,7 @@ Register normally through the UI
 
 Make the first user an Admin manually via Django Admin:
 
-=> python manage.py createsuperuser
+=> `python manage.py createsuperuser`
 
 
 Then edit their role to ADMIN in the database or UI.
